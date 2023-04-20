@@ -13,7 +13,6 @@ all: unhook-bof unhook-pic
 
 unhook-bof:
 	$(CC_x64) -o $(COMPILED)/unhook-bof.x64.o -c unhook-bof.c
-	$(CC_x86) -o $(COMPILED)/unhook-bof.x86.o -c unhook-bof.c
 
 unhook-pic:
 	nasm -f win64 lib/adjuststackx64.asm -o $(COMPILED)/adjuststackx64.o
